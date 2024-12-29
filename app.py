@@ -55,6 +55,10 @@ def display_transactions(transactions):
     print(table)
 
 
-data = get_transactions()
-# print(data)
-display_transactions(data)
+user_input = input("Enter address of account:")
+data = get_transactions(user_input)
+
+if not data:
+    print("There is not any transactions with that address or address is wrong")
+else:
+    display_transactions(data)
