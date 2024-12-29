@@ -55,10 +55,11 @@ def display_transactions(transactions):
     print(table)
 
 
-user_input = input("Enter address of account:")
-data = get_transactions(user_input)
+user_input_addr = input("Enter address of account: ")
+user_input_block = input("Enter Block number from which should fetching begin: ")
+data = get_transactions(address=user_input_addr, start_block=user_input_block)
 
 if not data:
-    print("There is not any transactions with that address or address is wrong")
+    print("There is not any transactions with that address or address is wrong ")
 else:
     display_transactions(data)

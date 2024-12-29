@@ -1,6 +1,6 @@
 # Ethereum Crawler
 
-This Python application crawls Ethereum blochain using the Etherscan API. It allows you to see all transactions (Tx) from and to address that is taken as input from user.
+This Python application crawls Ethereum blochain using the Etherscan API. It allows you to see all transactions (Tx) from and to address from given block number that is taken as input from user.
 
 **Only last 10000 can be obtained for particular address since that is api's constraint. Also I have set value of maximum 100 Tx for 1 page to be fetched but it can be easily edited to some other value.
 
