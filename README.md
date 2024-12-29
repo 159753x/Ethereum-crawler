@@ -1,6 +1,8 @@
 # Ethereum Crawler
 
-This Python application crawls Ethereum data using the Etherscan API. It allows you to interact with Ethereum blockchain data through a simple console output.
+This Python application crawls Ethereum blochain using the Etherscan API. It allows you to see all transactions (Tx) from and to address that is taken as input from user.
+
+**Only last 10000 can be obtained for particular address since that is api's constraint
 
 ## Quick Start
 
@@ -50,17 +52,7 @@ After setting up the `.env` file, you can start the crawler by running the follo
 python app.py
 ```
 
-The app will start, and you’ll see the console output as it interacts with the Ethereum network through the Etherscan API.
-
-## Example Output
-
-```bash
-Fetching data from Ethereum blockchain...
-Transaction found: 0x123456789abcdef...
-Balance: 5 ETH
-Block Number: 1234567
-...
-```
+The app will start, and you’ll see the input field where user can set address, after that it will show console output as table of all Tx with given address.
 
 ## Additional Notes
 
